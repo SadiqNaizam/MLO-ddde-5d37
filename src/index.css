@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 27 33% 97%; /* Warm off-white #FAF7F5 */
+    --foreground: 0 0% 29%; /* Dark warm gray #4A4A4A */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 27 33% 97%; /* Warm off-white */
+    --card-foreground: 0 0% 29%; /* Dark warm gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 27 33% 97%; /* Warm off-white */
+    --popover-foreground: 0 0% 29%; /* Dark warm gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 12 70% 62%; /* Terracotta #E2725B */
+    --primary-foreground: 30 50% 98%; /* Warm off-white for contrast */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 15 50% 75%; /* Lighter terracotta */
+    --secondary-foreground: 0 0% 20%; /* Darker for contrast */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 20% 90%; /* Light warm gray */
+    --muted-foreground: 0 0% 40%; /* Medium warm gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 16 100% 66%; /* Coral #FF7F50 */
+    --accent-foreground: 0 0% 100%; /* White for contrast */
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84.2% 60.2%; /* Default Red */
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 85%; /* Lighter warm gray */
+    --input: 30 20% 85%; /* Lighter warm gray */
+    --ring: 16 100% 66%; /* Coral - for focus states */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* 12px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar Light Theme */
+    --sidebar-background: 30 10% 95%; /* Very light warm gray */
+    --sidebar-foreground: 0 0% 29%; /* Dark warm gray */
+    --sidebar-primary: 12 70% 62%; /* Terracotta */
+    --sidebar-primary-foreground: 30 50% 98%; /* Warm off-white */
+    --sidebar-accent: 16 100% 66%; /* Coral */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 30 20% 80%; /* Slightly darker warm gray */
+    --sidebar-ring: 16 100% 66%; /* Coral */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Font Names */
+    --font-sans-name: "Inter";
+    --font-heading-name: "Outfit";
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 17%; /* Deep muted charcoal #2C2C2C */
+    --foreground: 0 0% 88%; /* Light warm gray #E0E0E0 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 23%; /* Slightly lighter deep muted gray #3A3A3A */
+    --card-foreground: 0 0% 88%; /* Light warm gray */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 23%; /* Slightly lighter deep muted gray */
+    --popover-foreground: 0 0% 88%; /* Light warm gray */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 12 75% 68%; /* Brighter Terracotta for dark mode */
+    --primary-foreground: 10 40% 15%; /* Dark brownish for contrast */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 15 30% 35%; /* Dark muted terracotta/gray */
+    --secondary-foreground: 0 0% 80%; /* Lighter gray for contrast */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 25%; /* Darker muted gray */
+    --muted-foreground: 0 0% 60%; /* Medium-light gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 16 100% 66%; /* Coral */
+    --accent-foreground: 0 0% 10%; /* Very dark gray/black for contrast */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 30.6%; /* Default Dark Red */
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 28%; /* Dark gray border */
+    --input: 0 0% 28%; /* Dark gray border */
+    --ring: 16 100% 66%; /* Coral - for focus states */
+
+    /* Sidebar Dark Theme */
+    --sidebar-background: 0 0% 12%; /* Darker charcoal */
+    --sidebar-foreground: 0 0% 88%; /* Light warm gray */
+    --sidebar-primary: 12 75% 68%; /* Brighter Terracotta */
+    --sidebar-primary-foreground: 10 40% 15%; /* Dark brownish */
+    --sidebar-accent: 16 100% 66%; /* Coral */
+    --sidebar-accent-foreground: 0 0% 10%; /* Very dark gray/black */
+    --sidebar-border: 0 0% 20%; /* Slightly darker than card */
+    --sidebar-ring: 16 100% 66%; /* Coral */
   }
 }
 
@@ -97,5 +97,6 @@
 
   body {
     @apply bg-background text-foreground;
+    /* Font family will be applied via Tailwind's base styles using the 'sans' key from the config */
   }
 }
